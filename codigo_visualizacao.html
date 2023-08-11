@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualização do Código </title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <body class="bg-gray-100">
+        <div class="container mx-auto py-10">
+            <h1 class="text-3xl text-center font-bold mb-6">Visualização do código HTML e JavaScript</h1>
+            <p class="text-center mb-10">Para mais informações sobre o projeto, visite: <a class="text-blue-500 hover:underline" href="https://github.com/thuroqq?tab=repositories">github.com/thuroqq</a></p>
+    
+            <h2 class="text-2xl font-bold mb-4">Código HTML</h2>
+            <pre class="bg-white rounded-lg shadow-sm p-4 mb-6">
+         <code class="language-html">
+        
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;Arthur Roque | web developer&lt;/title&gt;
+            
+            <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;div id="conteiner"&gt;
+                &lt;div&gt; 
+                    &lt;img src="img/perfil_thutu.svg" alt="foto de perfil de Arthur Roque"&gt;
+                    &lt;h1&gt; Arthur Roque &lt;/h1&gt; 
+                    &lt;p&gt; Front-end developer &lt;/p&gt;
+                    &lt;div&gt;
+                        &lt;nav&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;&lt;a href="https://www.linkedin.com/in/arthur-roque/"&gt; &lt;img src="img/linkedin_icon.svg" alt="icone linkedin "&gt; &lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="https://github.com/thuroqq"&gt; &lt;img src="img/git_icon.png" alt="Icone git hub" &gt; &lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#" class="icon" onclick="copy()"&gt; &lt;img src="img/Email_icon.png" alt="Icone email"&gt;   &lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/nav&gt;
+                    &lt;/div&gt;
+
+                    &lt;div&gt; 
+                        &lt;nav&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt; &lt;a href="#"&gt; Contact&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt; &lt;a href="#"&gt; Projetcs &lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt; &lt;a href="#"&gt; About &lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt; &lt;a href="#"&gt; Resume &lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/nav&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="linha"&gt;&lt;/div&gt;
+
+                    &lt;div&gt; 
+                        &lt;footer&gt;
+                            &lt;p&gt;Arthur Roque &copy; 2023 &lt;/p&gt;
+                            &lt;a href="codigo.html"&gt; &lt;img src="img/cod_icon.svg"&gt; &lt;/a&gt;
+                        &lt;/footer&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt; 
+            &lt;/div&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </code></pre>
+
+    
+    <h2 class="text-2xl font-bold mb-4">Código JavaScript</h2>
+    <pre class="bg-white rounded-lg shadow-sm p-4">
+        <code class="language-javascript">
+        function copy() {
+            var email = "arthur_roqq@outlook.com"; // Substitua pelo seu endereço de e-mail
+            navigator.clipboard.writeText(email).then(function() {
+                var tooltip = document.createElement("div");
+                tooltip.classList.add("tooltip", "text-black"); 
+                tooltip.textContent = "Email copiado!";
+            
+                var icon = document.querySelector(".icon");
+                icon.appendChild(tooltip);
+            
+                setTimeout(function() {
+                    icon.removeChild(tooltip);
+                }, 2000); // 2 segundos oculta o balão
+            }).catch(function(error) {
+                console.error("Erro ao copiar: ", error);
+            });
+        }
+    </code></pre>
+
+    <!-- Scripts para o Prism.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/plugins/autoloader/prism-autoloader.min.js"></script>
+</body>
+</html>
