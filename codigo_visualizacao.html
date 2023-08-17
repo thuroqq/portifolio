@@ -15,54 +15,68 @@
     
             <h2 class="text-2xl font-bold mb-4">Código HTML</h2>
             <pre class="bg-white rounded-lg shadow-sm p-4 mb-6">
-         <code class="language-html">
+         <code class="language-html text-center">
         
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-            &lt;title&gt;Arthur Roque | web developer&lt;/title&gt;
-            
-            <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-        &lt;/head&gt;
-        &lt;body&gt;
-            &lt;div id="conteiner"&gt;
-                &lt;div&gt; 
-                    &lt;img src="img/perfil_thutu.svg" alt="foto de perfil de Arthur Roque"&gt;
-                    &lt;h1&gt; Arthur Roque &lt;/h1&gt; 
-                    &lt;p&gt; Front-end developer &lt;/p&gt;
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title&gt; Arthur Roque | web developer &lt;/title&gt;
+                &lt;script src="https://cdn.tailwindcss.com"&gt; &lt;/script&gt; 
+                &lt;link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"&gt;
+                &lt;script src="script.js"&gt; &lt;/script&gt;
+            &lt;/head&gt;
+            &lt;body class="bg-gray-100 flex items-center justify-center min-h-screen"&gt;
+           
+                &lt;div class="mx-auto space-y-10 pb-100 "&gt; 
+                    &lt;div class="flex justify-center"&gt;
+                        &lt;img src="img/perfil_thutu.svg" alt="foto de perfil de Arthur Roque" class="mx-auto w-auto"&gt;
+                    &lt;/div&gt;
+                    &lt;div&gt; 
+                        &lt;h1 class="text-2xl font-bold text-center mt-4" &gt; Arthur Roque &lt;/h1&gt; 
+                        &lt;p class=" text 1xl text-center"&gt; Front-end developer &lt;/p&gt;
+                    &lt;/div&gt;
                     &lt;div&gt;
                         &lt;nav&gt;
-                            &lt;ul&gt;
-                                &lt;li&gt;&lt;a href="https://www.linkedin.com/in/arthur-roque/"&gt; &lt;img src="img/linkedin_icon.svg" alt="icone linkedin "&gt; &lt;/a&gt;&lt;/li&gt;
-                                &lt;li&gt;&lt;a href="https://github.com/thuroqq"&gt; &lt;img src="img/git_icon.png" alt="Icone git hub" &gt; &lt;/a&gt;&lt;/li&gt;
-                                &lt;li&gt;&lt;a href="#" class="icon" onclick="copy()"&gt; &lt;img src="img/Email_icon.png" alt="Icone email"&gt;   &lt;/a&gt;&lt;/li&gt;
+                            &lt;ul class="flex justify-center" &gt;
+                                &lt;li&gt; &lt;a target="_blank" class="block px-2 py-2" href="https://www.linkedin.com/in/arthur-roque/"&gt; 
+                                &lt;img src="img/linkedin_icon.svg" alt="icone linkedin "&gt; &lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt; &lt;a target="_blank"  class="block px-2 py-2" href="https://github.com/thuroqq"&gt; 
+                                &lt;img src="img/git_icon.png" alt="Icone git hub" &gt; &lt;/a&gt;&lt;/li&gt;
+                                &lt;li class="relative"&gt;
+                                    &lt;a class="block px-2 py-2" href="#" onclick="copy()"&gt;
+                                        &lt;img src="img/Email_icon.png" alt="Icone email" class="mx-auto"&gt;
+                                        &lt;div class="tooltip absolute top-[-30px] left-1/2 transform -translate-x-1/2 bg-gray-800 text-white px-2 
+                                        py-1 rounded text-sm opacity-0 transition-opacity duration-300"&gt;Email copiado!&lt;/div&gt;
+                                    &lt;/a&gt;
+                                &lt;/li&gt;
                             &lt;/ul&gt;
                         &lt;/nav&gt;
                     &lt;/div&gt;
-
-                    &lt;div&gt; 
+                    &lt;div class="absolute h-full w-15 left-[15px] bg-black-500"&gt;&lt;/div&gt;
+                    &lt;div class="mt-6"&gt; 
                         &lt;nav&gt;
-                            &lt;ul&gt;
-                                &lt;li&gt; &lt;a href="#"&gt; Contact&lt;/a&gt;&lt;/li&gt;
-                                &lt;li&gt; &lt;a href="#"&gt; Projetcs &lt;/a&gt;&lt;/li&gt;
-                                &lt;li&gt; &lt;a href="#"&gt; About &lt;/a&gt;&lt;/li&gt;
-                                &lt;li&gt; &lt;a href="#"&gt; Resume &lt;/a&gt;&lt;/li&gt;
+                            &lt;ul  class="flex justify-center"&gt;
+                                &lt;li&gt; &lt;a class="px-3 py-2" href="#" target="_blank"&gt; Contact&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt; &lt;a class="px-3 py-2" href="#"target="_blank"&gt; Projetcs &lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt; &lt;a class="px-3 py-2" href="#" target="_blank"&gt; About &lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt; &lt;a class="px-3 py-2" href="#" target="_blank" &gt; Resume &lt;/a&gt;&lt;/li&gt;
                             &lt;/ul&gt;
                         &lt;/nav&gt;
                     &lt;/div&gt;
-
-                    &lt;div class="linha"&gt;&lt;/div&gt;
-
-                    &lt;div&gt; 
-                        &lt;footer&gt;
+                    &lt;div class="flex justify-center"&gt;
+                        &lt;img src="img/barra_horizontal.svg" alt="Barra Horizontal"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="mt-6 text-center"&gt; 
+                        &lt;footer class="flex justify-center"&gt;
                             &lt;p&gt;Arthur Roque &copy; 2023 &lt;/p&gt;
-                            &lt;a href="codigo.html"&gt; &lt;img src="img/cod_icon.svg"&gt; &lt;/a&gt;
+                            &lt;a href="codigo_visualizacao.html" target="_blank"&gt; &lt;img src="img/cod_icon.svg"&gt; &lt;/a&gt;
                         &lt;/footer&gt;
                     &lt;/div&gt;
                 &lt;/div&gt; 
-            &lt;/div&gt;
-        &lt;/body&gt;
-        &lt;/html&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
     </code></pre>
 
     
